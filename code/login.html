@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FlexFit - Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="auth-view active">
+
+    <div class="image-section">
+        <img src="img/login-bg.jpg" alt="FlexFit Background" class="background-image"/>
+        <button class="back-button">←</button>
+    </div>
+
+    <div class="form-section">
+        <div class="form-container">
+
+            <div class="logo-container">
+                <div class="logo-icon"></div>
+                <div class="logo-text">Flex<strong>Fit</strong></div>
+            </div>
+
+            <div id="loginMessage" class="message error-message hidden"></div>
+
+            <div id="userFormWrapper" class="login-form-wrapper active">
+                <div class="form-header">
+                    <div class="form-title">Bienvenido de nuevo</div>
+                    <div class="form-title-main">Inicia <span class="highlight">Sesión</span></div>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label class="form-label">Correo electrónico</label>
+                        <input type="email" name="correo" class="form-input" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Contraseña</label>
+                        <input type="password" name="password" class="form-input" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="submit-button">Ingresar</button>
+                </form>
+
+                <div class="alternate-action">
+                    ¿No tienes cuenta? <a href="#" id="linkShowRegister">Regístrate</a>
+                </div>
+            </div>
+
+            <div id="adminFormWrapper" class="login-form-wrapper hidden">
+                <div class="form-header">
+                    <div class="form-title-main">Acceso <span class="highlight">Admin</span></div>
+                </div>
+                <form id="adminLoginForm">
+                    <div class="form-group">
+                        <label class="form-label">Código de Administrador</label>
+                        <input type="text" name="admin_code" class="form-input" placeholder="Código único" required/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Contraseña</label>
+                        <input type="password" name="password" class="form-input" placeholder="••••••••" required/>
+                    </div>
+                    <button type="submit" class="submit-button">Ingresar como Admin</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="JS_LOGIC/login.JS"></script>
+
+</body>
+</html>

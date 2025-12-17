@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FlexFit - Seleccionar Perfil</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+
+    <div id="welcomeScreen" class="auth-view active">
+        
+        <div class="image-section">
+            <img src="img/welcome-bg.jpg" alt="Gym" class="background-image">
+        </div>
+        
+        <div class="form-section">
+            <div class="form-container">
+                <div class="logo-container">
+                    <div class="logo-icon" aria-hidden="true"></div>
+                    <div class="logo-text">FLEX<strong>FIT</strong></div>
+                </div>
+                
+                <div class="form-header">
+                    <div class="form-title">¡Bienvenido a</div>
+                    <div class="form-title-main">FLEX<span class="highlight">FIT</span>!</div>
+                </div>
+                
+                <div class="profile-icon" aria-hidden="true"></div>
+
+                <div class="profile-selection" role="list">
+                    <button class="profile-option" data-target="admin">Admin</button>
+                    <button class="profile-option active" data-target="usuario">Usuario</button>
+                    <button class="profile-option" data-target="coach">Coach</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="JS_LOGIC/select_profile.JS"></script>
+</body>

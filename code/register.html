@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FlexFit - Registro</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body>
+
+<div id="registerScreen" class="auth-view active">
+
+    <div class="image-section">
+        <img src="img/reg_img.jpg" alt="Gym" class="background-image">
+        <button class="back-button" id="btnBackRegister">←</button>
+
+        <div class="alternate-action">
+            ¿Ya tienes cuenta? 
+            <a id="linkShowLogin">Inicia sesión</a>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="form-container">
+            
+            <div class="logo-container">
+                <div class="logo-icon" aria-hidden="true"></div>
+                <div class="logo-text">FLEX<strong>FIT</strong></div>
+            </div>
+            
+            <div class="form-header">
+                <div class="form-title">Únete a la comunidad</div>
+                <div class="form-title-main">Crea tu <span class="highlight">Perfil</span></div>
+                <div class="form-title-main hidden" id="registerProfileType">Usuario</div>
+            </div>
+
+            <div id="registerError" class="message error-message hidden" role="alert"></div>
+            <div id="registerSuccess" class="message success-message hidden"></div>
+
+            <form id="registerForm">
+                
+                <div class="form-group">
+                    <label class="form-label" for="regName">Nombre Completo</label>
+                    <input type="text" id="regName" name="nombre" class="form-input" placeholder="Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="regEmail">Correo Electrónico</label>
+                    <input type="email" id="regEmail" name="correo" class="form-input" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="regPhone">Número Telefónico</label>
+                    <div class="phone-input">
+                        <input type="text" class="form-input country-code" value="+57" readonly style="width: 50px; flex-shrink: 0;">
+                        <input type="tel" id="regPhone" name="telefono" class="form-input" placeholder="3001234567" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Género</label>
+                    <select id="regGender" name="genero" class="form-input" required>
+                        <option value="">Selecciona tu género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="regPassword">Contraseña</label>
+                    <input type="password" id="regPassword" name="password" class="form-input" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="regPasswordConfirm">Confirmar Contraseña</label>
+                    <input type="password" id="regPasswordConfirm" name="confirm_password" class="form-input" placeholder="••••••••" required>
+                </div>
+
+                <input type="hidden" name="rol_id" value="1">
+                
+                <button type="submit" class="submit-button">Crear Cuenta</button>
+
+            </form>
+
+            <div class="alternate-action">
+                ¿Ya tienes cuenta? 
+                <a id="linkShowLogin-footer">Inicia sesión</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="JS_LOGIC/register.JS"></script>
+
+</body>
+</html>

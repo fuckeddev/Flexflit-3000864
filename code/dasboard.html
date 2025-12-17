@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexFit - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="img/logo-flexfit.png" alt="" class="logo-img"> FLEX<span class="red-text">FIT</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">🏠 Principal</a>
+                <a href="rutina.html" class="nav-item">🏋️ Rutinas</a>
+                <a href="#" class="nav-item">📋 Registro</a>
+                <a href="#" class="nav-item">📖 Guías</a>
+                <a href="#" class="nav-item">👤 Perfil</a>
+                <a href="#" class="nav-item">🤖 Asistente</a>
+                <a href="#" class="nav-item">🛒 Tienda</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="select_profile.html" class="nav-item logout">➡️ Cerrar Sesión</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1>Bienvenido a <span class="red-text">FLEXFIT!</span></h1>
+                <p>Tu compañero de fitness personalizado con IA. ¿Qué te gustaría hacer hoy?</p>
+                <button class="btn-train" id="startWorkoutBtn">Iniciar entrenamiento</button>
+            </header>
+
+            <section class="cards-grid">
+                <div class="dashboard-card" onclick="window.location.href='rutina.html'">
+                    <div class="card-icon">🏋️</div>
+                    <h3>Rutinas</h3>
+                    <p>Genera rutinas de entrenamiento personalizadas.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-icon">📋</div>
+                    <h3>Registro</h3>
+                    <p>Lleva un registro de tus sesiones de entrenamiento.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-icon">📖</div>
+                    <h3>Guías</h3>
+                    <p>Explora nuestra biblioteca de ejercicios.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-icon">👤</div>
+                    <h3>Perfil</h3>
+                    <p>Gestiona tu información personal.</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>Asistente</h3>
+                    <p>Habla con nuestro asistente de IA para fitness.</p>
+                </div>
+                <div class="dashboard-card disabled">
+                    <div class="card-icon">🎟️</div>
+                    <h3>Suscripción</h3>
+                    <p>Suscríbete para obtener acceso ilimitado.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="JS_LOGIC/dashboard.JS"></script>
+</body>
+</html>
